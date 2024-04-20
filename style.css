@@ -36,7 +36,6 @@ body {
       animation: fadeImg 1s ease-in-out forwards;
       animation-delay: 1s;
     }
-
     .product__video {
       width: 320px;
       height: 100px;
@@ -74,7 +73,6 @@ body {
             box-shadow: 0 0 26px #f71568;
           }
         }
-
         p {
           margin-left: 25px;
           font-family: "Poppins";

@@ -1,30 +1,29 @@
+document.querySelector(".learn-more").addEventListener("click", function () {
+  document.getElementById("mySideMenu").style.width = "450px";
+});
 
-document.querySelector('.learn-more').addEventListener('click', function() {
-    document.getElementById('mySideMenu').style.width = '450px';
+function closeMenu() {
+  document.getElementById("mySideMenu").style.width = "0";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.querySelector(".search__input");
+  const searchButton = document.querySelector(".search__button");
+
+  searchButton.addEventListener("click", function () {
+    const searchTerm = searchInput.value;
+    // Add code here to search for the searchTerm on the website
+    console.log("Searching for: " + searchTerm);
   });
-  
-  function closeMenu() {
-    document.getElementById("mySideMenu").style.width = "0";
-  }
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.querySelector('.search__input');
-    const searchButton = document.querySelector('.search__button');
-  
-    searchButton.addEventListener('click', function() {
+
+  searchInput.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
       const searchTerm = searchInput.value;
-      // Add code here to search for the searchTerm on the website
-      console.log('Searching for: ' + searchTerm);
-    });
-  
-    searchInput.addEventListener('keypress', function(event) {
-      if (event.key === 'Enter') {
-        const searchTerm = searchInput.value;
-        console.log('Searching for: ' + searchTerm);
-      }
-    });
+      console.log("Searching for: " + searchTerm);
+    }
   });
-  
-  document.querySelector('.sketchfab-embed-wrapper iframe').style.width = '50%';
-  document.querySelector('.sketchfab-embed-wrapper iframe').style.height = '500px';
-  
+});
+
+document.querySelector(".sketchfab-embed-wrapper iframe").style.width = "50%";
+document.querySelector(".sketchfab-embed-wrapper iframe").style.height =
+  "500px";
