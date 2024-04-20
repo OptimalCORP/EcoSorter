@@ -25,4 +25,6 @@ document.querySelector('.learn-more').addEventListener('click', function() {
     });
   });
   
+  document.querySelector('.sketchfab-embed-wrapper iframe').style.width = '50%';
+  document.querySelector('.sketchfab-embed-wrapper iframe').style.height = '500px';
   
